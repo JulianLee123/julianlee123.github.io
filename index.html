@@ -1,14 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Julian Lee Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-	<script src="index.js"></script>
-	<p>Julian</p>
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Julian Lee Personal Portfolio</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1 class="name-logo">Julian Lee</h1>
+		<ul class="nav">
+			<li class="navlink"><a href="#about-me">About</a></li>
+			<li class="navlink"><a href="#education">Education</a></li>
+			<li class="navlink"><a href="#experience">Experience</a></li>
+			<li class="navlink"><a href="#projects">Projects</a></li>
+		</ul>
+		<div class="burger">
+			<i class="fas fa-bars"></i>
+		</div>
+	</header>
+	<script src="./js/nav.js"></script>
+	<div id="about-me" class="page-section row">
+		<div id="about-photo"  class="column">
+			<img src="img/profile.png">
+		</div>
+		<div id="about-description" class="column">
+			<h1 class="section-head"> Hi, I'm Julian Lee </h1>
+			<p> I'm a rising Junior at Yale University pursuing a 4-year combined
+			B.S./M.S. in Computer Science degree. I'm passionate about machine
+			learning, and I am constantly looking for opportunities to learn new
+			techniques and technologies while tackling impactful problems. Through
+			research and summer internships at American Express and the Naval
+			Research Laboratory, I have engineered machine learning solutions in
+			areas including robotics, recycling, and secure software development.
+			This work has led to the publication of 3 first-author papers. I'm
+			excited to continue solving challenging problems in this rapidly growing field.
+			</p>
+		</div>
+	</div>
+	<div id="experience" class="page-section">
+		<h1 class="section-head">Experience</h1>
+		<div class="cards">
+			<div class="card">
+				<h4><b>InfoSec Software Engineering Intern</b></h4>
+				<h4><b>American Express</b></h4>
+				<p>Big paragrah with a lot of text. Clustering is a powerful tool in
+				exploratory data analysis that partitions a set of objects into clusters
+				with the goal of maximizing the similarity of objects within each cluster.
+				Due to the tendency of clustering algorithms to find suboptimal partitions
+				of data, the approximation method Simulated Annealing (SA) has been used
+				to search for near-optimal partitions. However, existing SA-based
+				partitional clustering algorithms still settle to local optima. We propose
+				a new SA-based clustering algorithm, the Simulated Annealing with Gaussian
+				Mutation and Distortion Equalization algorithm (SAGMDE), which uses two
+				perturbation methods to allow for both large and small perturbations in
+				solutions. Our experiments on a diverse collection of data sets show that
+				SAGMDE performs more consistently and yields better results than existing
+				SA clustering algorithms in terms of cluster quality while maintaining a
+				reasonable runtime. Finally, we use generative art as a visualization tool
+				to compare various partitional clustering algorithms. </p>
+			</div>
+			<div class="card">
+				<h4><b>Machine Learning Research Intern</b></h4>
+				<h4><b>U.S. Naval Research Laboratory</b></h4>
+				<p>Big paragrah with a lot of text. Clustering is a powerful tool in
+				exploratory data analysis that partitions a set of objects into clusters
+				with the goal of maximizing the similarity of objects within each cluster.
+				Due to the tendency of clustering algorithms to find suboptimal partitions
+				of data, the approximation method Simulated Annealing (SA) has been used
+				to search for near-optimal partitions. However, existing SA-based
+				partitional clustering algorithms still settle to local optima. We propose
+				a new SA-based clustering algorithm, the Simulated Annealing with Gaussian
+				Mutation and Distortion Equalization algorithm (SAGMDE), which uses two
+				perturbation methods to allow for both large and small perturbations in
+				solutions. Our experiments on a diverse collection of data sets show that
+				SAGMDE performs more consistently and yields better results than existing
+				SA clustering algorithms in terms of cluster quality while maintaining a
+				reasonable runtime. Finally, we use generative art as a visualization tool
+				to compare various partitional clustering algorithms. </p>
+			</div>
+			<div class="card">
+				<h4><b>Research Assistant</b></h4>
+				<h4><b>Yale Social Robotics Lab</b></h4>
+				<p>Big paragrah with a lot of text. Clustering is a powerful tool in
+				SAGMDE performs more consistently and yields better results than existing
+				SA clustering algorithms in terms of cluster quality while maintaining a
+				reasonable runtime. Finally, we use generative art as a visualization tool
+				to compare various partitional clustering algorithms. </p>
+			</div>
+		</div>
+	</div>
+	<div id="projects" class="page-section">
+		<h1 class="section-head">Projects</h1>
+	</div>
+</body>
 </html>
+
