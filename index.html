@@ -10,25 +10,27 @@
 </head>
 <body>
 	<header>
-		<h1 class="name-logo">Julian Lee</h1>
-		<ul class="nav">
-			<li class="navlink"><a href="#about-me">About</a></li>
-			<li class="navlink"><a href="#education">Education</a></li>
-			<li class="navlink"><a href="#experience">Experience</a></li>
-			<li class="navlink"><a href="#projects">Projects</a></li>
-		</ul>
-		<div class="burger">
-			<i class="fas fa-bars"></i>
-		</div>
-	</header>
-	<script src="./js/nav.js"></script>
+      <h1 id="name-logo">Julian Lee</h1>
+      <ul class="nav">
+         <li class="navlink"><a href="#about-me">About</a></li>
+         <li class="navlink"><a href="#education">Education</a></li>
+         <li class="navlink"><a href="#experience">Experience</a></li>
+         <li class="navlink"><a href="#projects">Projects</a></li>
+			<li class="navlink"><a href="#publications">Publications</a></li>
+      </ul>
+      <div class="burger">
+         <i class="fas fa-bars"></i>
+      </div>
+   </header>
+	<div class="header-spacer"></div>
+   <script src="./js/nav.js"></script>
 	<div id="about-me" class="page-section row">
 		<div id="about-photo"  class="column">
 			<img src="img/profile.png">
 		</div>
 		<div id="about-description" class="column">
 			<h1 class="section-head"> Hi, I'm Julian Lee </h1>
-			<p> I'm a rising Junior at Yale University pursuing a 4-year combined
+			<p id="bio-text"> I'm a rising Junior at Yale University pursuing a 4-year combined
 			B.S./M.S. in Computer Science degree. I'm passionate about machine
 			learning, and I am constantly looking for opportunities to learn new
 			techniques and technologies while tackling impactful problems. Through
@@ -36,64 +38,93 @@
 			Research Laboratory, I have engineered machine learning solutions in
 			areas including robotics, recycling, and secure software development.
 			This work has led to the publication of 3 first-author papers. I'm
-			excited to continue solving challenging problems in this rapidly growing field.
+			excited to continue solving challenging problems in this rapidly
+			growing field.
 			</p>
+			<div class="socials">
+				<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/julian-lee-87b620230/"><i class="fab fa-linkedin"></i></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://github.com/JulianLee123"><i class="fab fa-github"></i></a>
+			</div>
 		</div>
 	</div>
 	<div id="experience" class="page-section">
 		<h1 class="section-head">Experience</h1>
-		<div class="cards">
-			<div class="card">
-				<h4><b>InfoSec Software Engineering Intern</b></h4>
+		<div class="cards-exp">
+			<div>
+				<h3><b> SWE Intern, Machine Learning </b></h3>
 				<h4><b>American Express</b></h4>
-				<p>Big paragrah with a lot of text. Clustering is a powerful tool in
-				exploratory data analysis that partitions a set of objects into clusters
-				with the goal of maximizing the similarity of objects within each cluster.
-				Due to the tendency of clustering algorithms to find suboptimal partitions
-				of data, the approximation method Simulated Annealing (SA) has been used
-				to search for near-optimal partitions. However, existing SA-based
-				partitional clustering algorithms still settle to local optima. We propose
-				a new SA-based clustering algorithm, the Simulated Annealing with Gaussian
-				Mutation and Distortion Equalization algorithm (SAGMDE), which uses two
-				perturbation methods to allow for both large and small perturbations in
-				solutions. Our experiments on a diverse collection of data sets show that
-				SAGMDE performs more consistently and yields better results than existing
-				SA clustering algorithms in terms of cluster quality while maintaining a
-				reasonable runtime. Finally, we use generative art as a visualization tool
-				to compare various partitional clustering algorithms. </p>
+				<h5><b>Jun 2023 - Present</b></h5>
+				<p>I'm designing machine learning-powered automations for threat
+				modeling on the developer security operations (DevSecOps) team.
+				These tools will provide instantaneous feedback on security risks
+				to software development teams, supporting secure development and
+				reducing the manual workload in threat model certification. </p>
+				<p> Languages, Tools, Algorithms:  </p>
 			</div>
-			<div class="card">
-				<h4><b>Machine Learning Research Intern</b></h4>
+			<div>
+				<h3><b>Machine Learning Intern</b></h3>
 				<h4><b>U.S. Naval Research Laboratory</b></h4>
-				<p>Big paragrah with a lot of text. Clustering is a powerful tool in
-				exploratory data analysis that partitions a set of objects into clusters
-				with the goal of maximizing the similarity of objects within each cluster.
-				Due to the tendency of clustering algorithms to find suboptimal partitions
-				of data, the approximation method Simulated Annealing (SA) has been used
-				to search for near-optimal partitions. However, existing SA-based
-				partitional clustering algorithms still settle to local optima. We propose
-				a new SA-based clustering algorithm, the Simulated Annealing with Gaussian
-				Mutation and Distortion Equalization algorithm (SAGMDE), which uses two
-				perturbation methods to allow for both large and small perturbations in
-				solutions. Our experiments on a diverse collection of data sets show that
-				SAGMDE performs more consistently and yields better results than existing
-				SA clustering algorithms in terms of cluster quality while maintaining a
-				reasonable runtime. Finally, we use generative art as a visualization tool
-				to compare various partitional clustering algorithms. </p>
+				<h5><b>May - Aug 2022 & Jan - Jul 2021</b></h5>
+				<p> I engineered machine learning solutions for an
+				unmanned underwater vehicle (UUV) propelled by flapping fins.
+				In Summer 2022, I designed a ML-based navigation algorithm to find a
+				optimal fin motions. I presented my
+				work at the 2023 Innovative Applications of AI Conference (IAAI-23).
+				In Summer 2021, I designed machine learning models to assist with the fin shape design process.
+				<p> Languages, Tools, Algorithms:  </p>
 			</div>
-			<div class="card">
-				<h4><b>Research Assistant</b></h4>
+			<div>
+				<h3><b>Research Assistant</b></h3>
 				<h4><b>Yale Social Robotics Lab</b></h4>
-				<p>Big paragrah with a lot of text. Clustering is a powerful tool in
-				SAGMDE performs more consistently and yields better results than existing
-				SA clustering algorithms in terms of cluster quality while maintaining a
-				reasonable runtime. Finally, we use generative art as a visualization tool
-				to compare various partitional clustering algorithms. </p>
+				<h5><b>Jan 2022 - Jan 2023</b></h5>
+				<p>I implemented a semi-supervised contrastive learning framework to
+				tailor the image classification of recyclables based on a few human examples. I co-authored our group's research
+				paper accepted to research paper accepted to the Conference for
+				Robot Learning. I also experimented with zero shot text-to-image
+				learning algorithms for identifying recyclables from captions. </p>
+				<p> Languages, Tools, Algorithms:  </p>
 			</div>
 		</div>
 	</div>
+	<div id="publications" class="page-section">
+		<h1 class="section-head">Publications</h1>
+		<h3> <i> Papers and Conferences </i> </h3>
+		<ul>
+			<li><b>J. Lee</b>, K. Viswanath, J. Geder, A. Sharma, M. Pruessner, B. Zhou, “Data-Driven Machine Learning Models for Multi-Objective Flapping Fin Unmanned Underwater Vehicle Control,” Innovative Applications of Artificial Intelligence (IAAI-23), Feb. 2023 (Oral Presentation)</li>
+			<li>D. Ghose, M. Lewkowicz, K. Gezahegn, <b>J. Lee</b>, T. Adamson, M. Vazquez, B. Scassellati, “Tailoring Visual Object Representations to Human Requirements: A Case Study with a Recycling Robot,” Conference on Robot Learning (CoRL 2023), Dec. 2022</li>
+			<li><b>J. Lee</b> and D. Perkins, “A simulated annealing algorithm with a dual perturbation method for clustering,” Pattern Recognition, Oct. 2020 (Top 10% Journals in AI; 24 citations)</li>
+		</ul>  
+		<h3> <i> Workshops </i> </h3>
+		<ul>
+			<li><b>J. Lee</b>, K. Viswanath, A. Sharma, J. Geder, R. Ramamurti, M. Pruessner, “Data-Driven Approaches for Thrust Prediction in Underwater Flapping Fin Propulsion Systems,” Second Symposium on Science-Guided AI (SGAI-AAAI-21), Nov. 2021 (Oral Presentation)</li>
+		</ul>  
+	</div>
 	<div id="projects" class="page-section">
 		<h1 class="section-head">Projects</h1>
+		<div class="cards-proj">
+			<div>
+				<h3><b>Task-Based Distributed System</b></h3>
+				<img src="img/projects/distributed-nws.png" alt="Project Img">
+
+				<p> Languages, Tools, Algorithms:  </p>
+			</div>
+			<div>
+				<h3><b>Human-Tailored Image Classification for Recyclables</b></h3>
+				<img src="img/projects/recycling-nws.png" alt="Project Img">
+				<p> Languages, Tools, Algorithms:  </p>
+			</div>
+			<div>
+				<h3><b>Novel Clustering Algorithm</b></h3>
+				<img src="img/projects/clustering-nws.png" alt="Project Img">
+				<p> Languages, Tools, Algorithms:  </p>
+			</div>
+			<div>
+				<h3><b>Visualizing Algorithms</b></h3>
+				<a target="_blank" rel="noopener noreferrer" href="https://github.com/JulianLee123"><i class="fab fa-github"></i></a>
+				<img src="img/projects/gen-art-nws.png" alt="Project Img">
+				<p> Languages, Tools, Algorithms:  </p>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
