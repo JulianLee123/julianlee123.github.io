@@ -1,4 +1,15 @@
+:root {
+   --gray1: #919a9c;
+	--blue1: #bee6ff;
+	--blue2: #5db0e4;
+	--blue3: #187fc3;
+	--blue4: #2baeff;
+	--blue5: rgb(0, 52, 84);
+}
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
 	background-color: #ffffff;
@@ -22,10 +33,15 @@ header {
 	color: #000000;
 	position: fixed;
 	background-color: #ffffff;
+	z-index:100;
+}
+header h1{
+	color: var(--blue5);
+	font-weight: bold;
 }
 
-#name-logo {
-	
+footer {
+  height: 30px;
 }
 
 .nav {
@@ -39,9 +55,10 @@ header {
 	margin: 0;
 }
 .navlink a {
-	color: #000000;
 	text-decoration: none;
 	font-size: 1.2em;
+	color: var(--blue5);
+	font-weight: bold;
 }
 
 .burger {
@@ -83,6 +100,10 @@ header {
 
 /*Main Content*/
 
+div {
+  scroll-margin-top: 100px;
+}
+
 #bio-text{
 	font-size: 22px
 }
@@ -108,6 +129,14 @@ header {
 #about-description{
 	flex-basis: 60%;
 }
+#about-description h1{
+	color: var(--blue5)
+}
+
+.page-section h1{
+	color: var(--blue5);
+	margin-top: 30px;
+}
 
 #publications h3{
 	font-size: 20px;
@@ -116,7 +145,22 @@ header {
 
 #publications ul{
 	font-size: 18px;
-	margin: 0px 0px 0px 0px;
+	line-height: 18pt;
+}
+
+#publications li{
+	margin-bottom: 10px;
+}
+
+#publications a{
+	text-decoration: none;
+	color: var(--blue2);
+	display: inline-block;
+	transition: transform 0.5s;
+}
+#publications a:hover{
+	color: var(--blue3);
+	transform: translateY(-3px);
 }
 
 
@@ -129,12 +173,12 @@ header {
 	text-decoration: none;
 	font-size: 30px;
 	margin-right: 15px;
-	color: #ababab;
+	color: var(--gray1);
 	display: inline-block;
 	transition: transform 0.5s;
 }
 .socials a:hover{
-	color: blue;
+	color: var(--blue2);
 	transform: translateY(-5px);
 }
 
@@ -150,7 +194,7 @@ header {
     grid-gap: 40px;
 }
 .cards-exp div{
-    background: #d0cccc;
+    background: var(--blue1);
     padding: 0px 20px 0px 20px ;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
@@ -181,8 +225,9 @@ header {
 }
 
 .cards-exp div:hover{
-    background: #ff004f;
+    background: var(--blue2);
     transform: translateY(-5px);
+	 z-index:0;
 }
 
 #cards-proj{
@@ -194,9 +239,10 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
 }
+
 .cards-proj div{
-    background: #d0cccc;
-    padding: 0px 20px 0px 20px ;
+    background: var(--blue1);
+    padding: 20px 20px 20px 10px ;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
@@ -207,18 +253,6 @@ header {
    margin : 10px 0px 5px 0px;
 }
 
-.cards-proj h4{
-   font-size: 20px;
-	padding: 0px;
-   margin : 5px 0px 5px 0px;
-}
-
-.cards-proj h5{
-   font-size: 18px;
-	padding: 0px;
-   margin : 5px 0px 5px 0px;
-}
-
 .cards-proj p{
    font-size: 18px;
 	padding: 0px;
@@ -226,13 +260,22 @@ header {
 }
 
 .cards-proj div:hover{
-    background: #ff004f;
+    background: var(--blue2);
     transform: translateY(-5px);
+	z-index: 0;
 }
 
 .cards-proj img {
-  width: 80%; /* takes the 100 % width of its container (.box div)*/
+  height: 180px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.project-git {
+   font-size: 24px;
+	color: #000000;
+	text-decoration: none;
 }
