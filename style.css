@@ -46,8 +46,8 @@ footer {
 
 .nav {
 	display: flex;
-	justify-content: space-around;
-	width: 40%;
+	justify-content: space-between;
+	width: 400px;
 }
 
 .navlink {
@@ -66,7 +66,7 @@ footer {
 	display: none;
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 650px) {
 	/* Hide for now: not necessary
 	
 	.burger {
@@ -91,7 +91,7 @@ footer {
 	.nav {
 		margin: 0;
 		position: absolute;
-		right: -100%;
+		right: -200%;
 	}
 	.nav-active {
 		right: 0;
@@ -118,19 +118,33 @@ div {
 	flex-basis: 100%;
 }
 
-#about-photo{
-	flex-basis: 35%;
-}
 #about-photo img{
 	width: 100%;
 	min-width: 200px;
 	border-radius: 25px;
 }
-#about-description{
-	flex-basis: 60%;
-}
+
 #about-description h1{
 	color: var(--blue5)
+}
+
+@media screen and (min-width: 650px) {
+	#about-photo{
+		flex-basis: 35%;
+	}
+	#about-description{
+		flex-basis: 60%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	#about-photo{
+		width: 35%;
+		margin-left: 20px;
+	}
+	#about-description{
+		width: 90%;
+	}
 }
 
 .page-section h1{
